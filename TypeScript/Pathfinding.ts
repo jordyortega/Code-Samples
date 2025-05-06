@@ -64,10 +64,7 @@ class Pathfinding {
                     continue;
                 }
 
-                if (
-                    isDiagonal &&
-                    (this.isBlockedForDiagonal(entity, currentX, neighborY) || this.isBlockedForDiagonal(entity, neighborX, currentY))
-                ) {
+                if (isDiagonal && (this.isBlockedForDiagonal(entity, currentX, neighborY) || this.isBlockedForDiagonal(entity, neighborX, currentY))) {
                     continue;
                 }
 
